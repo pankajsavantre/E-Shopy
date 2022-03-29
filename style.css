@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+   
+}
+::-webkit-scrollbar{
+    background:#fff;
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+::-webkit-scrollbar-button{
+    display: none;
+    background-color: #fff;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(238,174,202);
+    background: linear-gradient(180deg, #ff00c3 20%, #7d08f7 100%);
+    width: 5px;
+    border-radius: 53px;
+    
+}
+::-webkit-scrollbar-thumb:hover{
+ background: linear-gradient(180deg, #7d08f7 20%, #ff00c3 100%);
+}
+
+a{
+    text-decoration: none;
+}
+/* ======================================navbar-===================================================- */
+.header .nav-left{
+margin:0px 5px;
+color: rgb(148, 127, 127);
+}
+.header .nav-left:hover{
+    margin-top: -5px;
+    border-bottom:2px solid #dbf0ec;
+    transition: 0.3s;
+}
+/* .header .nav-right:hover{
+    font-size: 1.3rem;
+    padding: 1px;
+    transition: 0.5s;
+} */
+.header #logout :hover{
+  display: none;
+  transition: 0.5s;
+}
+.header .navlinkimg:hover:before{
+content:"Logout";
+position: relative;
+top: 10px;
+left: -10px;
+transition: 0.5s;
+color: red;
+}
+.header .nav-item .active{
+    border-bottom: 2px solid rgb(148, 127, 127);
+}
+.navbar-expand-md{
+    background: rgb(247, 245, 245);
+    box-shadow: -2px -2px 10px rgb(196, 128, 128);
+    height: 55px;
+    
+}
+.brand-logo{
+    width: 115px;
+    padding: 7px;
+    margin: 0px 0px 7px -15px;
+}
+.header .brand-logo:hover{
+    transform: translate(5px,5px);
+    transition: 0.3s;
+}
+.modal-img .modal-logo{
+    width: 90px;
+    padding: 7px;
+    margin: -20px 0px -20px -25px;
+}
+.nav-link .cart-badge{
+    font-size: 0.7rem;
+}
+.cart-badge{
+    position: relative;
+    left: -7px;
+    top: -8px
+}
+.inputbox{
+    margin-top: 15px;
+    margin-left:35%;
+}
+ .product_search, .furniture_search, .electronic_search{
+    width: 250px;
+    border: none !important;
+    outline: none !important;
+    border-radius: 15px !important;
+    box-shadow: 0px 0px 5px 1px pink !important;
+    padding-left: 15px !important;
+    
+}
+.product_search::placeholder{
+    color:#ae8f31;
+}
+
+
+/* ==============================================================poster------------------------------- */
+#poster-bg{
+    margin-top: -15px;
+}
+#poster-bg{
+    padding: 5px;
+    box-shadow: inset 0px 0px 15px #333;
+    margin-left:2px;
+    margin-right:2px;
+    margin-bottom: 7px;
+}
+.carousel-inner{
+    padding: 5px;
+    margin-bottom:10px ;
+}
+.carousel .carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #c7fd05;
+    position: relative;
+    bottom: -1.7em;
+    margin:0px 5px;
+    border: 1px solid rgb(146, 69, 248);
+}
+.carousel .carousel-indicators .active{
+    background-color: #fd4b05;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    /* box-shadow: inset -3px 2px 2px rgba(100, 100, 250,1); */
+}
+/*===========================================-deals of the day============================================---- */
+
+/* ==========================================================-electronics----------------------------------- */
+#electronics{
+   padding: 7px;
+}
+.electronics-text{
+    display:flex;
+    justify-content: space-between;
+}
+#electronics .view-all-text{
+    padding: 3px;
+    letter-spacing: 0.1em;
+    text-decoration: dotted;
+}
+.view-all-text:hover{
+color: rgb(248, 0, 207);
+text-decoration: none;
+font-size: 1.2rem;
+transition: 0.3s;
+}
+.electronics-products .card{
+    box-shadow: inset 0px 0px 10px rgb(249, 165, 252);
+    height: 22em;
+}
+.electronics-products img{
+    padding: 10px;
+
+}
+.electronics-product-desc{
+    font-size: 0.9em;
+    list-style: none;
+}
+.electronics-products{
+    box-shadow:0px 0px 15px rgb(249, 165, 252);
+    padding: 15px 5px;
+}
+#electronics .card_products .product_img{
+  width: 10px;
+  height: 10px;
+
+}
+.electronics-products button{
+
+    border: none;
+    width:150px;
+    height: 1.5em;
+    padding: 2px;
+}
+.electronics-products .btn-cart{
+    border-radius: 25px;
+    background-color: #eea5f5;
+    color: #000;
+    box-shadow: inset 1px -1px 5px 0px rgb(243, 21, 132);
+}
+.electronics-products .btn-buy{
+    border-radius: 25px;
+    background-color: #0bf8d1;
+    color: #000;
+    box-shadow: inset 1px -1px 5px 0px rgb(85, 163, 236);
+}
+
+/* ========================================================Furniture----------------------------------- */
+#furniture{
+   
+    padding: 7px;
+}
+.furniture-text{
+    display:flex;
+    justify-content: space-between;
+}
+#furniture .view-all-text{
+    padding: 3px;
+    letter-spacing: 0.1em;
+    text-decoration: dotted;
+}
+.view-all-text:hover{
+color: #df6720;
+text-decoration: none;
+font-size: 1.2rem;
+transition: 0.3s;
+}
+.furniture-products .card{
+    box-shadow: inset 0px 0px 10px #df6720;
+    height: 22em;
+}
+.furniture-products img{
+    padding: 10px;
+}
+.furniture-product-desc{
+    font-size: 0.9em;
+    list-style: none;
+}
+.furniture-products{
+    box-shadow:0px 0px 15px #df6720;
+    padding: 15px 5px;
+}
+.furniture-products button{
+
+    border: none;
+    width:150px;
+    height: 1.5em;
+    padding: 2px;
+}
+.furniture-products .btn-cart{
+    border-radius: 25px;
+    background-color: #ec697f;
+    color: #000;
+    box-shadow: inset 1px -1px 5px 0px rgb(243, 21, 132);
+}
+.furniture-products .btn-buy{
+    border-radius: 25px;
+    background-color: #42dac0;
+    color: #000;
+    box-shadow: inset 1px -1px 5px 0px rgb(85, 163, 236);
+}
+/* ---------------------------------------description page------------------------------ */
+/* ----------------------------------descrpition product------------------------------------ */
+.desc-box{
+margin-top: 80px;
+}
+.desc-img{
+    width: 350px
+}
+
+.about-product li{
+    list-style-type: circle;
+}
+
+/* ------------------------------------------cart------------------------------------------------- */
+.cart-main .shoping-cart-text{
+font-size: 1.5em;
+}
+.cart-main .cart-top-price{
+margin-top: 30px;
+}
+.cart-main #cart-bg{
+    
+   border-radius: 5px;
+    /* margin: 5px; */
+    box-shadow: 0px 0px 10px #bfbfbf;
+}
+.cart-main .cart-right-desc{
+    text-align: center;
+    box-shadow: 0px 0px 7px #bfbfbf;
+}
+
+#cart{
+    padding: 7px;
+    margin-bottom: 100px;
+}
+.cart-text{
+    display:flex;
+    justify-content: space-between;
+}
+.view-all-text{
+    padding: 3px;
+    letter-spacing: 0.1em;
+    text-decoration: dotted;
+}
+#cart .view-all-text:hover{
+color: rgb(255, 196, 0);
+text-decoration: none;
+font-size: 1.2rem;
+transition: 0.3s;
+}
+.cart-products .card{
+    box-shadow: inset 0px 0px 10px rgb(252, 217, 165);
+    height: 22em;
+}
+.cart-products img{
+    padding: 10px;
+}
+.cart-product-desc{
+    font-size: 0.9em;
+    list-style: none;
+}
+.cart-products{
+    box-shadow:0px 0px 15px rgb(252, 217, 165);
+    padding: 15px 5px;
+}
+.cart-products button{
+    
+    border: none;
+    width:4rem;
+    height: 1.5em;
+    margin-left:5px ;
+    padding: 2px;
+}
+.cart-desc .plus,.minus:hover{
+cursor: pointer;
+}
+/* ------------------------------------------Product Main page starts----------------------------------- */
+#eshophome{
+   
+    padding: 7px;
+}
+/* -------------------------------------left----------------------------------------- */
+.productboxline{
+    width: 1px;
+    height: 100vh;
+    background: #999;
+}
+
+/* --------------------------------------right----------------------------------------------- */
+.eshophome-products .card{
+    box-shadow: inset 0px 0px 10px rgb(249, 165, 252);
+    height: 22em;
+}
+.eshophome-products img{
+    padding: 10px;
+}
+.eshophome-product-desc{
+    font-size: 0.9em;
+    list-style: none;
+}
+.eshophome-products{
+    box-shadow:0px 0px 15px rgb(249, 165, 252);
+    padding: 15px 5px;
+}
+.eshophome-products button{
+
+    border: none;
+    width:55px;
+    height: 1.5em;
+    padding: 2px;
+}
+.eshophome-products .btn-cart{
+    border-radius: 25px;
+    background-color: #38c790;
+    color: #fff;
+    box-shadow: inset 1px -1px 5px 0px #85d137;
+}
+.eshophome-products .btn-buy{
+    border-radius: 25px;
+    background-color: #239be0;
+    color: #fff;
+    box-shadow: inset 1px -1px 5px 0px rgb(85, 163, 236);
+}
+.productboxfilteroption{
+    line-height: 33px;
+}
+/* ----------------------------------------------Product main page ends------------------------------------- */
+
+/* ========================================proceed to buy=================================================== */
