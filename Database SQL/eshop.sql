@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 03, 2022 at 09:41 AM
--- Server version: 10.4.19-MariaDB
--- PHP Version: 7.4.19
+-- Generation Time: Oct 18, 2022 at 09:17 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -67,7 +67,9 @@ CREATE TABLE `e_cart` (
 
 INSERT INTO `e_cart` (`id`, `p_name`, `p_price`, `p_category`, `p_image`, `p_description`, `p_qty`, `p_id`, `p_total`, `p_rid`, `status`) VALUES
 (107, 'cemera', '26000', 'Electronics', 'images/458991024.jpeg', 'cenon', 1, '7', '26000', '::1', ''),
-(108, 'TV', '24000', 'Electronics', 'images/1407767663.jpg', 'LG smart TVs are Internet-connected televisions that offer access to a world of entertainment. Enjoy movies, TV, games, videos and apps; LG’s smart TVs make entertaining the family easier than ever.', 1, '4', '24000', '::1', '');
+(108, 'TV', '24000', 'Electronics', 'images/1407767663.jpg', 'LG smart TVs are Internet-connected televisions that offer access to a world of entertainment. Enjoy movies, TV, games, videos and apps; LG’s smart TVs make entertaining the family easier than ever.', 1, '4', '24000', '::1', ''),
+(109, 'LG Smart T.V', '24000', 'Electronics', 'images/1407767663.jpg', 'LG smart TVs are Internet-connected televisions that offer access to a world of entertainment. Enjoy movies, TV, games, videos and apps; LG’s smart TVs make entertaining the family easier than ever.', 2, '4', '48000', 'pankyps07@gmail.com', ''),
+(110, 'HUL Pureit Eco', '13499', 'Electronics', 'images/1799030323.jpeg', 'HUL Pureit Eco Water Saver Mineral RO+UV+MF AS wall mounted/Counter top Black 10L Water Purifier', 1, '8', '13499', 'ps@gmail.com', '');
 
 -- --------------------------------------------------------
 
@@ -251,6 +253,8 @@ CREATE TABLE `e_user` (
   `user_name` varchar(125) NOT NULL,
   `user_email` varchar(125) NOT NULL,
   `user_mobile` varchar(125) NOT NULL,
+  `zip_code` int(100) NOT NULL,
+  `user_address` varchar(100) NOT NULL,
   `user_password` varchar(125) NOT NULL,
   `role` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -259,9 +263,9 @@ CREATE TABLE `e_user` (
 -- Dumping data for table `e_user`
 --
 
-INSERT INTO `e_user` (`user_id`, `user_name`, `user_email`, `user_mobile`, `user_password`, `role`) VALUES
-(1, 'Pankaj Ps', 'ps@gmail.com', '7894561230', '202cb962ac59075b964b07152d234b70', 'user'),
-(2, 'Json Roy', 'jr@gmail.com', '7986543210', '202cb962ac59075b964b07152d234b70', 'user');
+INSERT INTO `e_user` (`user_id`, `user_name`, `user_email`, `user_mobile`, `zip_code`, `user_address`, `user_password`, `role`) VALUES
+(1, 'Pankaj Ps', 'ps@gmail.com', '7894561230', 0, '', '202cb962ac59075b964b07152d234b70', 'user'),
+(2, 'Json Roy', 'jr@gmail.com', '7986543210', 0, '', '202cb962ac59075b964b07152d234b70', 'user');
 
 --
 -- Indexes for dumped tables
@@ -313,7 +317,7 @@ ALTER TABLE `e_admin`
 -- AUTO_INCREMENT for table `e_cart`
 --
 ALTER TABLE `e_cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=111;
 
 --
 -- AUTO_INCREMENT for table `e_order`
